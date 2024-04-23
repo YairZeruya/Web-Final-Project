@@ -67,7 +67,7 @@ app.get('/recent_trips', async (_req, res) => {
     res.status(500).send({ message: 'Error fetching recent trips', error: error.toString() });
   }
 });
-// server.js
+
 app.get('/last_trip', async (_req, res) => {
   try {
     const lastTrip = await Trip.findOne({}).sort({ counter: -1 });

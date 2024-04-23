@@ -6,7 +6,6 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import "leaflet-routing-machine";
 import "./App.css";
-import { createGlobalStyle } from 'styled-components';
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -132,7 +131,7 @@ function TripPage({ tripPlan }) {
           color: 'black',
           fontSize: '20px',
           marginBottom: '10px',
-        }}></h2>
+        }}> </h2>
         <p style={{
           fontSize: '16px',
           marginBottom: '10px',

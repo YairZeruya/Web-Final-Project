@@ -11,8 +11,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [country, setCountry] = useState(null);
   const [transportation, setTransportation] = useState(null);
-  
 
+  
   const handleGenerateClick = async (country, transportation) => {
     setIsLoading(true);
     setCountry(country);
